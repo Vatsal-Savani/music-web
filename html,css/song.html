@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="song.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: black">
+
+    <nav style="position:sticky" class="navbar navbar-expand-lg navbar-dark py-4">
+        <div class="container-fluid">
+            <div id="logo">
+                <img src="../images/logo2.png" alt="">
+                <a style="font-size: 24px;" class="navbar-brand" href="index.html"><span style="color: red;">MD</span>
+                    <span style="font-family: 'Nanum Gothic', sans-serif;">MUSIC</span></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div style="font-size: 10px;" id="searchtxt" class="container-fluid">
+                <form>
+                    <div style="border: 1px solid  rgb(100, 100, 100); border-radius: 5px; " class="input-group">
+                        <input style="background :transparent ; border: 1px solid black; " type="text"
+                            class="form-control text-white" placeholder="Username" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                        <span style="background-color: rgb(247,245,245,0.3); border: 1px solid rgb(247,245,245,0);"
+                            class="input-group-text" id="basic-addon1"><i class="fa fa-search text-white"></i></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">Podcast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">Playlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">Latest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#abtbtm">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-4" aria-current="page" href="#">SIGN IN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section style="display: flex;">
+            <div class="currentsong" style="height : 50vh;margin-left: 6rem;">
+                <!-- for animated border
+                <div class="wrapper1"> -->
+                <div class="imgphoto">
+                    <!-- add box1 for boder (animated)-->
+                    <img id="dp" class="d-flex myimg" src="../images/Kesariya-Song.jpg" alt="">
+                </div>
+                <!-- </div> -->
+                <!-- ................... -->
+                <h3 style="margin-top:1.5rem"><Strong id="songtitle"></Strong></h3>                
+                <a href="#" style="display: block;"><button style="border-radius: 8px; cursor: pointer;" id="playbttn0">Play</button></a>
+                <hr>
+                <h3>Artists</h3>
+                <ul id="artists" style="padding-left: 1rem;">
+                    <!-- aaiya nw artist nu element add thase-->
+                </ul>
+                <hr>
+                <div>
+                   <h4 style="display: block;margin-bottom: 0.5rem;">Current Song</h4> 
+                   <a><button id="playbttn">Play</button></a>
+                </div>
+            </div>
+            <div style="margin: 5rem 8rem 0 8rem; width: 63vw;">
+                <div id="oSL">
+                    <div id="sList">
+                        <p style="font-size: 1.5rem;"><strong>Other songs from this movie</strong> </p>
+                    </div>
+                    <hr>
+                    <div class="songlists">
+                        <ul id="oSongList">
+                            <!-- badha other songs aaiya add thase-->
+                        </ul>
+                    </div>
+                </div>
+                <div id="tTitle">
+                    <p style="font-size: 1.5rem; margin-top: 2rem;"><strong>Trending Songs</strong></p>
+                </div>
+                <hr>
+                <div class="songlists">
+                    <ul>
+                        <li class="d-flex">
+                            <img class="col-lg-1" src="../images/trending/dp/1.jpg" alt=""
+                                style="height: 3.5rem; border-radius: 3rem;">
+                                <p class="col-lg-8">Chaand Baaliyan</p>
+                                <i style="cursor: pointer; margin-left: 12.4rem; padding-top: 1rem;" id="1" class="col-lg-1 fa-sharp songitemplay fa-2x fa-solid fa-circle-play"></i>
+                        </li>
+                        <li class="d-flex">
+                            <img class="col-lg-1" src="../images/trending/dp/2.jpg" alt=""
+                                style="height: 3.5rem; border-radius: 3rem;">
+                                <p class="col-lg-8">Falak-Tak-Chal-Sath-Mere</p>
+                                <i style="cursor: pointer; margin-left: 12.4rem; padding-top: 1rem;" id="2" class="col-lg-1 fa-sharp songitemplay fa-2x fa-solid fa-circle-play"></i>
+                        </li>
+                        <li class="d-flex">
+                            <img class="col-lg-1" src="../images/trending/dp/3.jpg" alt=""
+                                style="height: 3.5rem; border-radius: 3rem;">
+                               <p class="col-lg-8">Headlights (feat. KIDDO)</p>
+                               <i style="cursor: pointer; margin-left: 12.4rem; padding-top: 1rem;" id="3" class="col-lg-1 fa-sharp songitemplay fa-2x fa-solid fa-circle-play"></i>
+                        </li>
+                        <li class="d-flex">
+                            <img class="col-lg-1" src="../images/trending/dp/4.jpg" alt=""
+                                style="height: 3.5rem; border-radius: 3rem;">
+                                <p class="col-lg-8">Meri Jaan</p>
+                                <i style="cursor: pointer; margin-left: 12.4rem; padding-top: 1rem;" id="4" class="col-lg-1 fa-sharp songitemplay fa-2x fa-solid fa-circle-play"></i>
+                        </li>
+                        <li class="d-flex">
+                            <img class="col-lg-1" src="../images/trending/dp/5.jpg" alt=""
+                                style="height: 3.5rem; border-radius: 3rem;">
+                                <p class="col-lg-8">Tumse Hi Tumse</p>
+                                <i style="cursor: pointer; margin-left: 12.4rem; padding-top: 1rem;" id="5" class="col-lg-1 fa-sharp songitemplay fa-2x fa-solid fa-circle-play"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="songMakers">
+            <div class="mt-5" style="border : 1px solid rgb(65, 65, 65) ; margin-left: 5.6rem; margin-right: 5.6rem;">
+                <div class="d-flex">
+                    <div style="width :88%">
+                        <h4 style="margin: 3rem 0 0 5rem"><strong id="sTForDetails"></strong></h4>
+                        <div style="margin: 1.8rem 2rem 1.5rem 5rem">
+                            <table id="songCreaters" class="table table-bordered">
+                                <!-- song creators no data aaiya aavse-->
+                            </table>
+                        </div>
+                    </div>
+                    <div style="width:10%">
+                        <img style="width: 5vw; height: 10vh;margin-left: 4.8rem;" src="../images/side caret.png" alt="">
+                    </div>
+                </div>
+                <div style="color: white ; margin: 0 14rem 0 5rem">
+                    <p>“Where words leave off, music begins!”</p>
+                    <p><span style="color: red">MD</span> Music brings to you Kesariya (From "Brahmastra") MP3 song from the movie/album Kesariya (From "Brahmastra"). With <span style="color: red">MD</span> Music, you will not only enjoy your favourite MP3 songs online, but you will also have access to our hottest playlists such as English Songs, Hindi Songs, Malayalam Songs, Punjabi Songs, Tamil Songs, Telugu Songs. Along with it if you are looking for a podcast online to keep you motivated throughout the week, then check out the latest podcast of Podcast.</p>
+                    <p>Songs are the best way to live the moments or reminisce the memories and thus we at MD strive to enhance your listening experience by providing you with high-quality MP3 songs & lyrics to express your passion or to sing it out loud. You can even download MP3 songs for offline listening. So, what are you waiting for? Start streaming your favourite tunes today!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="abtbtm">
+            <div style="margin: 6rem 5rem;">
+                <div class="d-flex">
+                    <div class="col-sm-3">
+                        <h6><b>LATEST ALBUMS</b></h6>
+                        <div class="aboutbottom">
+                            <a>BORN PINK</a> | 
+                            <a>CHUP!</a> | 
+                            <a>Vikram Original Motion Picture Soundtrack</a> | 
+                            <a>Shubh  Vivah</a> |
+                            <a>Pushpa - The Rise</a> | 
+                            <a>Ninna Sanihake</a> | 
+                            <a>Praktan</a> | 
+                            <a>No Name</a> |
+                            <a>Bhavartha Mauli</a> | 
+                            <a>Yuva Sarkar</a> | 
+                            <a>Mal mahu</a> |
+                            <a>jiban mati</a> | 
+                            <a>LEGEND</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6><b>GENRES</b></h6>
+                        <div class="aboutbottom">
+                            <a>Rock Songs</a> | 
+                            <a>Patriotic songs</a> | 
+                            <a>Sufi Music</a> |
+                            <a>Ghazals</a> | 
+                            <a>Workout Music</a> | 
+                            <a>Devotional Songs</a> | 
+                            <a>Sad Songs</a> | 
+                            <a>DJ Songs</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6><b>OLD SONGS</b></h6>
+                        <div class="aboutbottom">
+                            <a>Old Songs</a> | 
+                            <a>Old Hindi Songs</a> | 
+                            <a>Old English Songs</a> |
+                            <a>Old Punjabi Songs</a> | 
+                            <a>Old Telugu Songs</a> | 
+                            <a>Old Tamil Songs</a> | 
+                            <a>Old Bengali Songs</a> | 
+                            <a>Old Malayalam Songs</a> | 
+                            <a>Old Kannada Songs</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6><b>TOP ARTISTS</b></h6>
+                        <div class="aboutbottom">
+                            <a>Guru Randhawa</a> | 
+                            <a>Arijit Singh</a> | 
+                            <a>Atif Aslam</a> |
+                            <a>Justin Bieber</a> | 
+                            <a>Gulzar</a> | 
+                            <a>Armaan Malik</a> | 
+                            <a>Sidhu Moose Wala</a> | 
+                            <a>Alan Walker</a> | 
+                            <a>Udit Narayan</a> | 
+                            <a>Sonu Nigam</a> |
+                            <a>Sid Sriram</a> |
+                            <a>Akhil</a> |
+                            <a>Darshan Raval</a> |
+                            <a>Shreya Ghoshal</a> | 
+                            <a>Alka Yagnik</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 3rem;" class="d-flex">
+                    <div class="col-sm-3">
+                        <h6><b>LANGUAGES</b></h6>
+                        <div class="aboutbottom">
+                            <a>New Bengali Songs</a> | 
+                            <a>New Bhojpuri Songs</a> | 
+                            <a>New English Songs</a> | 
+                            <a>New Haryanvi Songs</a> |
+                            <a>New Hindi Songs</a> | 
+                            <a>New Kannada Songs</a> | 
+                            <a>New Marathi Songs</a> | 
+                            <a>New Punjabi Songs</a> |
+                            <a>New Tamil Songs</a> | 
+                            <a>New Telugu Songs</a> | 
+                            <a>New Odiya Songs</a> | 
+                            <a>New Rajasthani Songs</a> | 
+                            <a>New Gujarati Songs</a> | 
+                            <a>New Assamese Songs</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6><b>LATEST SONGS</b></h6>
+                        <div class="aboutbottom">
+                            <a>Kesariyo Rang</a> | 
+                            <a>Alcoholia (From "Vikram Vedha")</a> |
+                            <a>Boom Padi (From "Maja Ma")</a> |
+                            <a>Manike (From "Thank God")</a> | 
+                            <a>O Sajna</a> | 
+                            <a>Gunehgar</a> | 
+                            <a>Tu Banke Hawa (From "Dhokha Round D Corner")</a> |
+                            <a>Bekhabar</a> |
+                            <a> Mere Khayalon Ki Malika 2.0</a> | 
+                            <a>Thaar Maar Thakkar Maar</a> |
+                            <a>Ishq Da Dariyaa</a> |
+                            <a>Dhol Bajaa</a> |
+                            <a>Navratri Aivi</a> | 
+                            <a>The Hic Song</a> | 
+                            <a>Dhol</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6><b>TOP SONGS</b></h6>
+                        <div class="aboutbottom">
+                            <a>Kesariya (From "Brahmastra")</a> | 
+                            <a>Raataan Lambiyan (From "Shershaah")</a> | 
+                            <a>Pasoori</a> |
+                            <a>Megham Karukatha (From "Thiruchitrambalam")</a> | 
+                            <a>Ranjha (From "Shershaah")</a> |
+                            <a>Inthandham (From "Sita Ramam (Telugu)")</a> | 
+                            <a>Saadgi To Hamari</a> | 
+                            <a>Baarish Mein Tum</a> | <a>295</a> |
+                            <a>Na Jaane Kyun</a> |
+                            <a>Mitti De Tibbe</a> | 
+                            <a>Tu Hi Bata</a> | 
+                            <a>Baarish Aayi Hai</a> | 
+                            <a>Oh Sita Hey Rama (From "Sita Ramam (Telugu)")</a> | 
+                            <a>Ye Teri Meri Kahani (ft. Sumedha Karmahe)</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6><b>TOP SEARCHED LYRICS</b></h6>
+                        <div class="aboutbottom">
+                            <a>Bom Diggy Diggy</a> | 
+                            <a>Machayenge</a> | 
+                            <a>Tera Yaar Hoon Main</a> | 
+                            <a>Kar Gayi Chull</a> | 
+                            <a>Morni Banke</a> | 
+                            <a>Chalti Hai Kya 9 Se 12</a> | 
+                            <a>Sunny Sunny</a> | 
+                            <a>Gallan Goodiyaan</a> | 
+                            <a>Sooraj Ki Baahon Mein</a> |
+                            <a>Hawayein</a> | 
+                            <a>Roke Na Ruke Naina</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin: 0 6rem">
+            <hr style="opacity: 0.3">
+            <div class="d-flex">
+                <div id="contactussection">
+                    <p class="text-white mt-3">
+                        <a href="#">ABOUT US <span style="opacity: 0.4">|</span></a>
+                        <a href="#">PRIVACY POLICY <span style="opacity: 0.4">|</span></a>
+                        <a href="#">ADVERTISE WITH US <span style="opacity: 0.4">|</span></a>
+                        <a href="#">TERMS OF USE <span style="opacity: 0.4">|</span></a>
+                        <a href="#">CONTACT US <span style="opacity: 0.4">|</span></a>
+                        <a href="#">FEEDBACK <span style="opacity: 0.4">|</span></a>
+                        <a href="#">HELLOTUNES</a>
+
+                    </p>
+                </div>
+                <div style="margin-left: 24rem;" class="icons_container">
+                    <div class="icon facebook">
+                        <div class="tooltip">
+                            Facebook
+                        </div>
+                        <span><a href="#"><img src="../images/facebook.png" alt="" style="height: 4vh"></a></span>
+                    </div>
+                    <div class="icon twitter">
+                        <div class="tooltip">
+                            Twitter
+                        </div>
+                        <span><a href="#"><img src="../images/twitter.png" alt="" style="height: 4vh"></a></span>
+                    </div>
+                    <div class="icon instagram">
+                        <div class="tooltip">
+                            Instagram
+                        </div>
+                        <span><a href="#"><img src="../images/instagram.png" alt="" style="height: 4vh"></a></span>
+                    </div>
+                    <div class="icon youtube">
+                        <div class="tooltip">
+                            YouTube
+                        </div>
+                        <span><a href="#"><img src="../images/youtube.png" alt="" style="height: 4vh"></a></span>
+                    </div>
+                </div>
+
+            </div>
+            <hr style="opacity: 0.4">
+        </section>
+
+        <section style="margin: 0 6rem">
+            <div style="font-size: 12px;" class="d-flex">
+                <div style="width: 70vw ; padding-right: 24rem">
+                    MD Music is the one-stop music app for the latest to the greatest songs that you love. Play your
+                    favourite music online for free. Enjoy Many Hindi, English, Bollywood, Regional, Latest, Old songs
+                    and more.
+                </div>
+                <div>
+                    2022 © All rights reserved | <span class="text-danger"><MD><a href="#">MD</a></span> MUSIC Limited
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <section id="musicbar">
+        <div class="text-white bottom">
+            <div class="wrap wdth" style="width: 84.8vw">
+                <input id="myprogressbar" type="range" class="range" min="0" max="100" step="0.1" value="0">
+                <div class="track">
+                  <div class="track-inner"></div>
+                </div>
+                <div class="thumb"></div>
+              </div>
+            <div class="d-flex">
+                <div style="margin: 1.2rem 0 0 1rem;" class="d-flex col-lg-4">
+                    <img id="playdp" style="height: 3.4rem; width: 3.4rem;border-radius: 0.4rem;" src="../images/Kesariya-Song.jpg" alt="">
+                    <p style="margin-left: 1rem; padding-top: 1rem;" id="ttl"></p>
+                </div>
+                <div id="songbtn" class="col-lg-4">
+                    <p><i id="previousplay" style="font-size: 1.5rem;cursor: pointer;" class="fa-sharp fa-solid fa-backward-step"></i></p>
+                    <p><i id="masterplay" style="background-color: red; border-radius: 24px; cursor: pointer;" class="fa-sharp fa-3x fa-solid fa-circle-play"></i></p>
+                    <p><i id="forwardplay" style="font-size: 1.5rem;cursor: pointer;" class="fa-sharp fa-solid fa-forward-step"></i></p>
+                </div>
+                <div style="margin:6px 0 0 20vw;" class="time col-lg-4">
+                    <p id="sDuration" style="padding-top: 1.8rem;">4:45</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+</body>
+<script src="../js/js1.js" type="module"></script>
+<script src="https://kit.fontawesome.com/d7df2482e8.js" crossorigin="anonymous"></script>
+</html>

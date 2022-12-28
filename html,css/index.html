@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: rgb(14, 14, 16)">
+
+    <nav style="position:sticky" class="navbar navbar-expand-lg navbar-dark py-4">
+        <div class="container-fluid">
+            <div id="logo">
+                <img src="../images/logo2.png" alt="">
+                <a style="font-size: 24px;" class="navbar-brand" href="#"><span style="color: red;">MD</span>
+                <span style="font-family: 'Nanum Gothic', sans-serif;">MUSIC</span></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div style="font-size: 10px;" id="searchtxt" class="container-fluid">
+                <form>
+                    <div style="border: 1px solid  rgb(100, 100, 100); border-radius: 5px; " class="input-group">
+                        <input style="background :transparent ; border: 1px solid black; " type="text"
+                            class="form-control text-white" placeholder="Username" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                        <span style="background-color: rgb(247,245,245,0.3); border: 1px solid rgb(247,245,245,0);"
+                            class="input-group-text" id="basic-addon1"><i class="fa fa-search text-white"></i></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">Podcast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">Playlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#">Latest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" aria-current="page" href="#aboutsection">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-4" aria-current="page" href="#">SIGN IN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div id="con1" class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div style="border:1px solid black; border-radius: 23px;" class="carousel-inner">
+                        <div style="height: 46vh; width: 65vw; " class="carousel-item active">
+                            <img class="d-block w-100" src="../images/slider1.jpg" alt="First slide">
+                        </div>
+                        <div style="height: 46vh; width: 65vw;" class="carousel-item">
+                            <img class="d-block w-100" src="../images/slider2.jpg" alt="Second slide">
+                        </div>
+                        <div style="height: 46vh; width: 65vw;" class="carousel-item">
+                            <img class="d-block w-100" src="../images/slider3.jpg" alt="Third slide">
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span style="background-color: black; border:1px solid black; border-radius:10px;"
+                                class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span style="background-color: black; border:1px solid black; border-radius:10px;"
+                                class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <section>
+            <div class="container-fluid">
+                <h2 style="padding-left:67px"><strong>Top Charts</strong></h2>
+                <div style="margin-top: -54px;" class="container-fluid">
+                    <div id="con2" class="container-fluid">
+                        <div style="margin-left: 23px;" class="columns d-flex is-multiline p-0 pt-6 last">
+                            <div class="col is-one-quarter">
+                                <a href="song.html"><img id="song1" class="musics" style="height: 225px; width: 200px;" src="../images/Kesariya-Song.jpg"></a>
+                                <h4 class="py-2">Kesariya</h4>
+                            </div>
+                            <div class="col is-one-quarter">
+                                <a href="song.html"><img id="song2" class="musics" style="height: 225px; width: 200px;" src="../images/Har-Har-Shambhu.jpg"></a>
+                                <h4 class="py-2">Har Har Shambhu</h4>
+                            </div>
+                            <div class="col is-one-quarter">
+                                <a href="song.html"><img id="song3" class="musics" style="height: 225px; width: 200px;" src="../images/machayenge-3.jpg"></a>
+                                <h4 class="py-2">machayenge-3</h4>
+                            </div>
+                            <div class="col is-one-quarter">
+                                <a href="song.html"><img id="song4" class="musics" style="height: 225px; width: 200px;" src="../images/Oo-Antava-Oo-Oo-Antava.jpg"></a>
+                                <h4 class="py-2">Oo-antava</h4>
+                            </div>
+                            <div class="col is-one-quarter">
+                                <a href="song.html"><img id="song5" class="musics" style="height: 225px; width: 200px;" src="../images/param-sundari.jpg"></a>
+                                <h4 class="py-2">Param-Sundari</h4>
+                            </div>
+                            <div class="col is-one-quarter">
+                                <a href="song.html"><img id="song6" class="musics" style="height: 225px; width: 200px;" src="../images/o-sajna.jpg"></a>
+                                <h4 class="py-2">O-sajna</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid">
+                <h2 style="padding-left:67px"><strong>Trending Hindi</strong></h2>
+                <div style="margin-top: -54px;" class="container-fluid">
+                    <div id="con2" class="container-fluid">
+                        <div style="margin-left: 23px" class="columns d-flex last">
+                            <div class="col is-one-quarter">
+                                <a href="song.html"><img id="song7" class="musics" style="height: 225px; width: 200px;" src="../images/Rata-Lambiya.jpg"></a>
+                                <h4 class="py-2">Raataan-Lambiyan</h4>
+                            </div>
+                            <div class="col is-one-quarter">
+                                <a href="song.html"><img id="song8" class="musics" style="height: 225px; width: 200px;" src="../images/saami-saami.jpg"></a>
+                                <h4 class="py-2">Saami-Saami</h4>
+                            </div>
+                            <div class="col is-one-quarter">
+                                <a href="song.html"><img id="song9" class="musics" style="height: 225px; width: 200px;" src="../images/Srivalli.jpg"></a>
+                                <h4 class="py-2">Srivalli</h4>
+                            </div>
+                            <div class="col is-one-quarter">
+                                <a href="song.html"><img id="song10" class="musics" style="height: 225px; width: 200px;" src="../images/zaroori-tha.jpg"></a>
+                                <h4 class="py-2">Zaroori Tha</h4>
+                            </div>
+                            <div class="col is-one-quarter">
+                                <a href="song.html"><img id="song11" class="musics" style="height: 225px; width: 200px;" src="../images/jugnu.jpg"></a>
+                                <h4 class="py-2">Jugnu</h4>
+                            </div>
+                            <div class="col is-one-quarter">
+                                <a href="song.html"><img id="song12" class="musics" style="height: 225px; width: 200px;" src="../images/Deva-Deva.jpg"></a>
+                                <h4 class="py-2">Deva Deva</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutsection">
+            <div style="margin-left: 6.5rem;" id="aboutus" class="d-flex">
+                <div style="padding: 40px 35px 17px 35px;">
+                    <h4><strong>About MD Music</strong></h4>
+                    <p style="color: #cacaca;">
+                        MD Music is a complete package that allows you to stream music online,listen to podcasts,and
+                        much more! Since music is essentially the only thing that can truly understand a person, we work
+                        hard to offer our audience the ideal blend of MP3 from your favorite 
+                        <span style="color: rgb(159, 114, 114); cursor: pointer;"><b>albums</b></span>
+                         & artists in HD
+                        Quality. We have made online music streaming simple, fun, and all about you! So, what's the wait
+                        for, Discover and listen to your favorite songs from different genres, explore mind-blowing
+                        playlists , 
+                        <span style="color: rgb(159, 114, 114); cursor: pointer;"><b>podcasts</b></span> &
+                        MP3 Songs exclusively on MD Music. Keep Listning!
+                    </p>
+                </div>
+                <div>
+                    <img style="height: 200px; margin-right: 24px;" src="../images/about-us.jpg" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="abtbtm">
+            <div style="margin: 6rem 5rem;">
+                <div class="d-flex">
+                    <div class="col-sm-3">
+                        <h6><b>LATEST ALBUMS</b></h6>
+                        <div class="aboutbottom">
+                            <a>BORN PINK</a> | 
+                            <a>CHUP!</a> | 
+                            <a>Vikram Original Motion Picture Soundtrack</a> | 
+                            <a>Shubh  Vivah</a> |
+                            <a>Pushpa - The Rise</a> | 
+                            <a>Ninna Sanihake</a> | 
+                            <a>Praktan</a> | 
+                            <a>No Name</a> |
+                            <a>Bhavartha Mauli</a> | 
+                            <a>Yuva Sarkar</a> | 
+                            <a>Mal mahu</a> |
+                            <a>jiban mati</a> | 
+                            <a>LEGEND</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6><b>GENRES</b></h6>
+                        <div class="aboutbottom">
+                            <a>Rock Songs</a> | 
+                            <a>Patriotic songs</a> | 
+                            <a>Sufi Music</a> |
+                            <a>Ghazals</a> | 
+                            <a>Workout Music</a> | 
+                            <a>Devotional Songs</a> | 
+                            <a>Sad Songs</a> | 
+                            <a>DJ Songs</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6><b>OLD SONGS</b></h6>
+                        <div class="aboutbottom">
+                            <a>Old Songs</a> | 
+                            <a>Old Hindi Songs</a> | 
+                            <a>Old English Songs</a> |
+                            <a>Old Punjabi Songs</a> | 
+                            <a>Old Telugu Songs</a> | 
+                            <a>Old Tamil Songs</a> | 
+                            <a>Old Bengali Songs</a> | 
+                            <a>Old Malayalam Songs</a> | 
+                            <a>Old Kannada Songs</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6><b>TOP ARTISTS</b></h6>
+                        <div class="aboutbottom">
+                            <a>Guru Randhawa</a> | 
+                            <a>Arijit Singh</a> | 
+                            <a>Atif Aslam</a> |
+                            <a>Justin Bieber</a> | 
+                            <a>Gulzar</a> | 
+                            <a>Armaan Malik</a> | 
+                            <a>Sidhu Moose Wala</a> | 
+                            <a>Alan Walker</a> | 
+                            <a>Udit Narayan</a> | 
+                            <a>Sonu Nigam</a> |
+                            <a>Sid Sriram</a> |
+                            <a>Akhil</a> |
+                            <a>Darshan Raval</a> |
+                            <a>Shreya Ghoshal</a> | 
+                            <a>Alka Yagnik</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 3rem;" class="d-flex">
+                    <div class="col-sm-3">
+                        <h6><b>LANGUAGES</b></h6>
+                        <div class="aboutbottom">
+                            <a>New Bengali Songs</a> | 
+                            <a>New Bhojpuri Songs</a> | 
+                            <a>New English Songs</a> | 
+                            <a>New Haryanvi Songs</a> |
+                            <a>New Hindi Songs</a> | 
+                            <a>New Kannada Songs</a> | 
+                            <a>New Marathi Songs</a> | 
+                            <a>New Punjabi Songs</a> |
+                            <a>New Tamil Songs</a> | 
+                            <a>New Telugu Songs</a> | 
+                            <a>New Odiya Songs</a> | 
+                            <a>New Rajasthani Songs</a> | 
+                            <a>New Gujarati Songs</a> | 
+                            <a>New Assamese Songs</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6><b>LATEST SONGS</b></h6>
+                        <div class="aboutbottom">
+                            <a>Kesariyo Rang</a> | 
+                            <a>Alcoholia (From "Vikram Vedha")</a> |
+                            <a>Boom Padi (From "Maja Ma")</a> |
+                            <a>Manike (From "Thank God")</a> | 
+                            <a>O Sajna</a> | 
+                            <a>Gunehgar</a> | 
+                            <a>Tu Banke Hawa (From "Dhokha Round D Corner")</a> |
+                            <a>Bekhabar</a> |
+                            <a> Mere Khayalon Ki Malika 2.0</a> | 
+                            <a>Thaar Maar Thakkar Maar</a> |
+                            <a>Ishq Da Dariyaa</a> |
+                            <a>Dhol Bajaa</a> |
+                            <a>Navratri Aivi</a> | 
+                            <a>The Hic Song</a> | 
+                            <a>Dhol</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6><b>TOP SONGS</b></h6>
+                        <div class="aboutbottom">
+                            <a>Kesariya (From "Brahmastra")</a> | 
+                            <a>Raataan Lambiyan (From "Shershaah")</a> | 
+                            <a>Pasoori</a> |
+                            <a>Megham Karukatha (From "Thiruchitrambalam")</a> | 
+                            <a>Ranjha (From "Shershaah")</a> |
+                            <a>Inthandham (From "Sita Ramam (Telugu)")</a> | 
+                            <a>Saadgi To Hamari</a> | 
+                            <a>Baarish Mein Tum</a> | <a>295</a> |
+                            <a>Na Jaane Kyun</a> |
+                            <a>Mitti De Tibbe</a> | 
+                            <a>Tu Hi Bata</a> | 
+                            <a>Baarish Aayi Hai</a> | 
+                            <a>Oh Sita Hey Rama (From "Sita Ramam (Telugu)")</a> | 
+                            <a>Ye Teri Meri Kahani (ft. Sumedha Karmahe)</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6><b>TOP SEARCHED LYRICS</b></h6>
+                        <div class="aboutbottom">
+                            <a>Bom Diggy Diggy</a> | 
+                            <a>Machayenge</a> | 
+                            <a>Tera Yaar Hoon Main</a> | 
+                            <a>Kar Gayi Chull</a> | 
+                            <a>Morni Banke</a> | 
+                            <a>Chalti Hai Kya 9 Se 12</a> | 
+                            <a>Sunny Sunny</a> | 
+                            <a>Gallan Goodiyaan</a> | 
+                            <a>Sooraj Ki Baahon Mein</a> |
+                            <a>Hawayein</a> | 
+                            <a>Roke Na Ruke Naina</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section style="margin: 0 6rem">
+            <hr style="opacity: 0.3">
+            <div class="d-flex">
+                <div id="contactussection">
+                    <p class="text-white mt-3">
+                        <a href="#">ABOUT US <span style="opacity: 0.4">|</span></a>
+                        <a href="#">PRIVACY POLICY <span style="opacity: 0.4">|</span></a>
+                        <a href="#">ADVERTISE WITH US <span style="opacity: 0.4">|</span></a>
+                        <a href="#">TERMS OF USE <span style="opacity: 0.4">|</span></a>
+                        <a href="#">CONTACT US <span style="opacity: 0.4">|</span></a>
+                        <a href="#">FEEDBACK <span style="opacity: 0.4">|</span></a>
+                        <a href="#">HELLOTUNES</a>
+
+                    </p>
+                </div>
+                <div style="margin-left: 24rem;" class="icons_container">
+                    <div class="icon facebook">
+                        <div class="tooltip">
+                            Facebook
+                        </div>
+                        <span><a href="#"><img src="../images/facebook.png" alt="" style="height: 4vh"></a></span>
+                    </div>
+                    <div class="icon twitter">
+                        <div class="tooltip">
+                            Twitter
+                        </div>
+                        <span><a href="#"><img src="../images/twitter.png" alt="" style="height: 4vh"></a></span>
+                    </div>
+                    <div class="icon instagram">
+                        <div class="tooltip">
+                            Instagram
+                        </div>
+                        <span><a href="#"><img src="../images/instagram.png" alt="" style="height: 4vh"></a></span>
+                    </div>
+                    <div class="icon youtube">
+                        <div class="tooltip">
+                            YouTube
+                        </div>
+                        <span><a href="#"><img src="../images/youtube.png" alt="" style="height: 4vh"></a></span>
+                    </div>
+                </div>
+
+            </div>
+            <hr style="opacity: 0.4">
+        </section>
+
+
+    </main>
+
+    <footer>
+        <section style="margin: 0 6rem">
+            <div style="font-size: 12px;" class="d-flex">
+                <div style="width: 70vw ; padding-right: 24rem">
+                    MD Music is the one-stop music app for the latest to the greatest songs that you love. Play your
+                    favourite music online for free. Enjoy Many Hindi, English, Bollywood, Regional, Latest, Old songs
+                    and more.
+                </div>
+                <div>
+                    2022 © All rights reserved | <span class="text-danger"><MD><a href="#">MD</a></span> MUSIC Limited
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+
+</body>
+<script src="../js/js.js" type="module"></script>
+
+</html>

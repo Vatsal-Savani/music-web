@@ -1,0 +1,145 @@
+{
+    "song1" : {
+        "title" : "kesariya",
+        "moviename" : "brahmastra",
+        "image" : "../images/Kesariya-Song.jpg",
+        "music" : "../musics/KesariyaSong.mp3",
+        "artists" : ["Arijit Singh","Amitabh Bhattacharya","Pritam Chakraborty","Arijit Singh Amitabh Bhattacharya"],
+        "oMusics" : {
+            "Deva Deva" : ["../oSongs/brahmastra/6.jpg","../oSongs/brahmastra/6.mp3"],
+            "Dance ka Bhoot":["../oSongs/brahmastra/7.jpg","../oSongs/brahmastra/7.mp3"],
+            "Rasiya":["../oSongs/brahmastra/8.jpg","../oSongs/brahmastra/8.mp3"]
+        },
+        "musicDetails" : ["Kesariya (From 'Brahmastra')","Pritam Chakraborty, Arijit Singh, Amitabh Bhattacharya, Arijit Singh Amitabh Bhattacharya","Pritam Chakraborty","Amitabh Bhattacharya","Hindi","Sony Music Entertainment India Pvt. Ltd.","04:28"]
+    },
+
+    "song2" : {
+        "title" : "Har Har Shambhu",
+        "image" : "../images/Har-Har-Shambhu.jpg",
+        "music" : "../musics/Har Har Shambhu Shiv Mahadeva(PagalWorld.com.se).mp3",
+        "artists" : ["Jeetu Sharma","Abhilipsa Panda"],
+        "oMusics" : {},
+        "musicDetails" : ["Har Har Shambhu Shiv Mahadeva","Jeetu Sharma, Abhilipsa Panda","Jeetu Sharma","Jeetu Sharma","Hindi","Jeetu Sharma","05:54"]
+    },
+
+    "song3" : {
+        "title" : "machayenge-3",
+        "image" : "../images/machayenge-3.jpg",
+        "music" : "../musics/Machayenge 3(PagalWorld.com.se).mp3",
+        "artists" : ["Emiway Bantai","Mohd Bilal Shaikh"],
+        "oMusics" : {},
+        "musicDetails" : ["Machayenge 3","Emiway Bantai, Mohd Bilal Shaikh","Mohd Bilal Shaikh","Mohd Bilal Shaikh","Hindi","Bantai Studio","03:49"]
+    },
+
+    "song4" : {
+        "title" : "Oo-antava",
+        "moviename" : "pushpa",
+        "image" : "../images/Oo-Antava-Oo-Oo-Antava.jpg",
+        "music" : "../musics/Oh Antava Mava(PagalWorld.com.se).mp3",
+        "artists" : ["Indravathi Chauhan","Devi Sri Prasad","Allu Arjun","Rashmika Mandanna","Chandrabose"],
+        "oMusics" : {         
+            "Sami Sami":["../oSongs/pushpa/6.jpg","../oSongs/pushpa/6.mp3"],
+            "Srivalli":["../oSongs/pushpa/7.jpg","../oSongs/pushpa/7.mp3"]
+        },
+        "musicDetails" : ["Pushpa - The Rise","Indravathi Chauhan, Devi Sri Prasad, Allu Arjun, Rashmika Mandanna, Chandrabose","Devi Sri Prasad","Chandrabose","Telugu","Aditya Music","03:43"]
+    },
+
+    "song5" : {
+        "title" : "Param-Sundari",
+        "moviename" : "mimi",
+        "image" : "../images/param-sundari.jpg",
+        "music" : "../musics/Param Sundari(PagalWorld.com.se).mp3",
+        "artists" : ["A R Rahman","Shreya Ghoshal"],
+        "oMusics" : {
+            "Chhoti Si Chiraiya" : ["../oSongs/mimi/6.jpg","../oSongs/mimi/6.mp3"],
+            "Hututu" : ["../oSongs/mimi/7.jpg","../oSongs/mimi/7.mp3"],
+            "Phuljhadiyon" : ["../oSongs/mimi/8.jpg","../oSongs/mimi/8.mp3"],
+            "Rihaayi De" : ["../oSongs/mimi/9.jpg","../oSongs/mimi/9.mp3"],
+            "Rock A Bye Baby" : ["../oSongs/mimi/10.jpg","../oSongs/mimi/10.mp3"],
+            "Yaane Yaane" : ["../oSongs/mimi/11.jpg","../oSongs/mimi/11.mp3"]
+        },
+        "musicDetails" : ["Mimi Original Motion Picture Soundtrack","Ar Rahmanshreya Ghoshal, A R Rahman , Shreya Ghoshal, A.r. Rahman","A.r. Rahman","A.r. Rahman","Hindi","Sony Music Entertainment India Pvt. Ltd.","03:20"]
+    },
+
+    "song6" : {
+        "title" : "O-sajna",
+        "image" : "../images/o-sajna.jpg",
+        "music" : "../musics/O Sajna(PagalWorld.com.se).mp3",
+        "artists" : ["Neha Kakkar","Jaani","Tanishk Bagchi","Lalit Sen"],
+        "oMusics" : {},
+        "musicDetails" : ["O Sajna","Neha Kakkar, Jaani, Tanishk Bagchi, Lalit Sen","Tanishk Bagchi, Lalit Sen","Jaani, Lalit Sen","Hindi","T-Series","04:05"]
+    },
+
+    "song7" : {
+        "title" : "Raataan-Lambiyan",
+        "moviename" : "shershaah",
+        "image" : "../images/Rata-Lambiya.jpg",
+        "music" : "../musics/Raatan Lambiyan(PagalWorld.com.se).mp3",
+        "artists" : ["Asees Kaur","Tanishk Bagchi","Jubin Nautiyal"],
+        "oMusics" : {
+            "Jaihind Ki Senaa" : ["../oSongs/shershaah/6.jpg","../oSongs/shershaah/6.mp3"],
+            "Kabhi Tumhe" : ["../oSongs/shershaah/7.jpg","../oSongs/shershaah/7.mp3."],
+            "Mann Bharryaa 2" : ["../oSongs/shershaah/8.jpg","../oSongs/shershaah/8.mp3"],
+            "Ranjha" : ["../oSongs/shershaah/9.jpg","../oSongs/shershaah/9.mp3"]
+        },
+        "musicDetails" : ["Raataan Lambiyan From 'Shershaah'","Asees Kaur, Tanishk Bagchi, Jubin Nautiyal Asees Kaur, Jubin Nautiyal, Tanishk Bagchi, Jubin Nautiyal & Asees Kaur","Tanishk Bagchi","Tanishk Bagchi","Hindi","Sony Music Entertainment India Pvt. Ltd.","03:50"]
+    },
+
+    "song8" : {
+        "title" : "Saami-Saami",
+        "moviename" : "pushpa",
+        "image" : "../images/saami-saami.jpg",
+        "music" : "../musics/Saami Saami(PagalWorld.com.se).mp3",
+        "artists" : ["Mounika Yadav","Devi Sri Prasad","Allu Arjun","Rashmika Mandanna","Chandrabose"],
+        "oMusics" :  {
+            "Sami Sami":["../oSongs/pushpa/6.jpg","../oSongs/pushpa/6.mp3"],          
+            "Srivalli":["../oSongs/pushpa/7.jpg","../oSongs/pushpa/7.mp3"]
+        },
+        "musicDetails" : ["Pushpa - The Rise","Mounika Yadav, Devi Sri Prasad, Allu Arjun, Rashmika Mandanna, Chandrabose","Devi Sri Prasad","Chandrabose","Telugu","Aditya Music","03:43"]
+    },
+
+    "song9" : {
+        "title" : "Srivalli",
+        "moviename" : "pushpa",
+        "image" : "../images/Srivalli.jpg",
+        "music" : "../musics/Srivalli(PagalWorld.com.se).mp3",
+        "artists" : ["Sid Sriram","Devi Sri Prasad","Allu Arjun","Rashmika Mandanna","Chandrabose"],
+        "oMusics" :  {
+            "Sami Sami":["../oSongs/pushpa/6.jpg","../oSongs/pushpa/6.mp3"],
+            "Srivalli":["../oSongs/pushpa/7.jpg","../oSongs/pushpa/7.mp3"]      
+        },
+        "musicDetails" : ["Pushpa - The Rise","Sid Sriram, Devi Sri Prasad, Allu Arjun, Rashmika Mandanna, Chandrabose","Devi Sri Prasad","Chandrabose","Telugu","Aditya Music","03:41"]
+    },
+
+    "song10" : {
+        "title" : "Zaroori Tha",
+        "image" : "../images/zaroori-tha.jpg",
+        "music" : "../musics/Zaroori Tha(PagalWorld.com.se).mp3",
+        "artists" : ["Rahat Fateh Ali Khan","Sahir Ali Bagga","Khalil Ur Rehman"],
+        "oMusics" : {},
+        "musicDetails" : ["Back 2 Love","Rahat Fateh Ali Khan, Sahir Ali Bagga, Khalil Ur Rehman","Sahir Ali Bagga","Khalil Ur Rehman","Hindi","℗ 2014 Portfolio Managing Events, Under Exclusive License from Portfolio Managing Events to Universal Music India Pvt. Ltd.","05:42"]
+    },
+
+    "song11" : {
+        "title" : "Jugnu",
+        "image" : "../images/jugnu.jpg",
+        "music" : "../musics/Jugnu(PagalWorld.com.se).mp3",
+        "artists" : ["Badshah","Nikhita Gandhi"],
+        "oMusics" : {},
+        "musicDetails" : ["Jugnu","Badshah, Nikhita Gandhi","Badshah","Badshah","Hindi","℗ 2021 Universal Music India Pvt. Ltd.","03:50"]
+    },
+
+    "song12" : {
+        "title" : "Deva Deva",
+        "moviename" : "brahmastra",
+        "image" : "../images/Deva-Deva.jpg",
+        "music" : "../musics/Deva Deva(PagalWorld.com.se).mp3",
+        "artists" : ["Arijit Singh","Amitabh Bhattacharya","Jonita Gandhi","Pritam","Ranbir Kapoor","Alia Bhatt","Amitabh Bachchan"],
+        "oMusics" : {
+            "Kesariya" : ["../oSongs/brahmastra/6.jpg","../oSongs/brahmastra/6.mp3"],
+            "Dance ka Bhoot":["../oSongs/brahmastra/7.jpg","../oSongs/brahmastra/7.mp3"],
+            "Rasiya":["../oSongs/brahmastra/8.jpg","../oSongs/brahmastra/8.mp3"]
+        },
+        "musicDetails" : ["Deva Deva (From 'Brahmastra')","Pritam Chakraborty, Arijit Singh, Amitabh Bhattacharya, Jonita Gandhi, Arijit Singh Amitabh Bhattacharyajonita Gandhi, Pritam, Arijit Singh & Amitabh Bhattacharya;jonita Gandhi, Pritam, Ranbir Kapoor, Alia Bhatt, Pritam, Arijit Singh & Amitabh Bhattacharya, Amitabh Bachchan","Pritam Chakraborty","Amitabh Bhattacharya","Hindi","Sony Music Entertainment India Pvt. Ltd.","04:39"]
+    }
+}
